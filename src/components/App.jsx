@@ -10,10 +10,8 @@ function App() {
     const { value, name } = event.target;
 
     setFullName((prevValue) => {
-      return {
-        fName: name === "fName" ? value : prevValue.fName,
-        lName: name === "lName" ? value : prevValue.lName
-      };
+      return...prevValue,
+        [name]: value,
     });
   }
 
